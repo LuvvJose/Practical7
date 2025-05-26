@@ -23,7 +23,7 @@ namespace Practical7.Models
                     Summary = "Addison is a detective from Sale who falls in love with his best friend. The two are separated when the best friend falls for somebody else. However, Addison manages to rescue the situation by buying a magnificent t-shirt.,",
                     Url = "https://bait.example.net/bag.aspx",
                     PublicationDate = new DateTime(2018, 07, 24),
-                    ImageUrl = "/images/sktop-3194194_340.jpg"
+                    ImageUrl = "https://cdn.pixabay.com/photo/2018/03/02/20/22/sktop-3194194__340.jpg"
                 },
                 new Book
                 {
@@ -33,7 +33,7 @@ namespace Practical7.Models
                     Url = "https://www.example.com/bite.aspx",
                     PublicationDate = new DateTime(2006, 5, 15),
                     EditionCount = 2,
-                    ImageUrl = "/images/lemur-1602313_340.jpg"
+                    ImageUrl = "https://cdn.pixabay.com/photo/2016/08/18/08/31/lemur-1602313__340.jpg"
 
                 },
                 new Article
@@ -43,7 +43,7 @@ namespace Practical7.Models
                     Summary = "A caretaker from Lehi is delighted when she gets the chance to take part in the final of X-Factor. However, her chances are scuppered by an angyy camel. After the drama, the caretaker realises there is more to life than winning X-Factor and goes on a picninc with her great aunt instead.\"",
                     Url = "https://example.com/bone/basin.php?bed=bedroom&boat=amusement#boundary",
                     PublicationDate = new DateTime(2023, 3, 21),
-                    ImageUrl = "/images/meadow.jpg"
+                    ImageUrl = "https://cdn.pixabay.com/photo/2017/06/14/11/34/meadow-2401931__340.jpg"
 
 
                 },
@@ -55,7 +55,7 @@ namespace Practical7.Models
                     Url = "https://www.example.com/baseball/basin.php?attraction=anger&bead=amusement",
                     PublicationDate = new DateTime(1989, 6, 6),
                     EditionCount = 3,
-                    ImageUrl = "/images/clock.jpg"
+                    ImageUrl = "https://cdn.pixabay.com/photo/2016/09/01/10/33/witchs-house-1635770_960_720.jpg"
                 }
             };
 

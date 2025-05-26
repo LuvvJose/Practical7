@@ -1,0 +1,36 @@
+﻿@model List<Practical7.Models.Publication>
+
+@{
+    ViewBag.Title = "Publications";
+    
+}
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    @foreach (var pub in Model)
+    {
+        <div class="col">
+            <div class="card h-100">
+                <img src="@pub.ImageUrl" class="card-img-top" alt="@pub.Title" style="height: 200px; object-fit: cover;" />
+                <div class="card-body">
+                    <h6 class="card-subtitle mb-2 text-muted">@pub.Type</h6>
+                    <h5 class="card-title">
+                        @pub.Title
+                </h5>
+                <h6 class="card-subtitle mb-2">by @pub.Author.Name</h6>
+                <p class="card-text">@pub.Summary</p>
+                <a href="@pub.Url" class="btn btn-link ">Read more</a>
+            </div>
+            <div class="card-footer text-muted">
+                @if (pub is Practical7.Models.Book book)
+                {
+                    <small>First publication date is @pub.GetDate() and the number of editions is @book.EditionCount</small>
+                }
+                else
+                {
+                    <small>The date of publication is @pub.GetDate()</small>
+                }
+            </div>
+        </div>
+    </div>
+}
+</div>

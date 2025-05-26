@@ -29,7 +29,7 @@ namespace Practical7.Models
     {
         public int EditionCount { get; set; }
         public override string Type => "Book";
-        public string GetEditionDisplay()
+        public string GetEdition()
         {
             return EditionCount == 1 ? "1st Edition" : $"{EditionCount} Editions";
         }

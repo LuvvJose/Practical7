@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Practical7.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -25,6 +26,12 @@ namespace Practical7.Controllers
             ViewBag.Message = "Your contact page.";
 
             return View();
+        }
+
+        public ActionResult Publication()
+        {
+            var publications = FakeData.GetAllPublications();
+            return View(publications);
         }
     }
 }
