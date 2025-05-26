@@ -11,8 +11,8 @@ namespace Practical7.Models
         public Author Author { get; set; }
         public string Summary { get; set; }
         public string Url { get; set; }
-        public string ImageUrl { get; set; }
         public DateTime PublicationDate { get; set; }
+        public string ImageUrl { get; set; }
         public abstract string Type { get; }
         public string GetDate()
         {
