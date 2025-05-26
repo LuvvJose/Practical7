@@ -7,14 +7,11 @@ namespace Practical7.Models
 {
 	public abstract class Publication
 	{
-
-        /// <summary>
-        /// Title of the publication.
-        /// </summary>
         public string Title { get; set; }
         public Author Author { get; set; }
         public string Summary { get; set; }
         public string Url { get; set; }
+        public string ImageUrl { get; set; }
         public DateTime PublicationDate { get; set; }
         public abstract string Type { get; }
         public string GetDate()
@@ -28,9 +25,6 @@ namespace Practical7.Models
         public override string Type => "Article";
     }
 
-    /// <summary>
-    /// Represents a book publication.
-    /// </summary>
     public class Book : Publication
     {
         public int EditionCount { get; set; }
