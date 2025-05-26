@@ -13,6 +13,10 @@ namespace Practical7.Models
             var author2 = new Author { Name = "Octavia Barret" };
             var author3 = new Author { Name = "Gunnhild Aric" };
             var author4 = new Author { Name = "Jakob Ayanda" };
+            var author5 = new Author { Name = "Shyam Benson" };
+            var author6 = new Author { Name = "Lucas Asim" };
+            var author7 = new Author { Name = "Harmon Deeann" };
+            var author8 = new Author { Name = "Gargi Sudheer" };
 
             var publications = new List<Publication>
             {
@@ -55,15 +59,59 @@ namespace Practical7.Models
                     Url = "https://www.example.com/baseball/basin.php?attraction=anger&bead=amusement",
                     PublicationDate = new DateTime(1989, 6, 6),
                     EditionCount = 3,
-                    ImageUrl = "https://cdn.pixabay.com/photo/2016/09/01/10/33/witchs-house-1635770_960_720.jpg"
+                    ImageUrl = "https://cdn.pixabay.com/photo/2016/08/20/05/44/clock-1606919__340.jpg"
+                },
+
+                new Article
+                {
+                    Title = "Everything you ever wanted to know about terminal",
+                    Author = author5,
+                    Summary = "In a world where robots are miraculously transformed into angels, one pop star has no choice but to bring down the goverment by killing her own step-sister. It turns out all the robots were a manifestations of the pop star's multiple personality disorder and her real fight is one to regain sanity.",
+                    Url = "https://www.example.com/bait/bath.php",
+                    PublicationDate = new DateTime(2020, 1, 23),
+                    ImageUrl = "https://cdn.pixabay.com/photo/2016/09/01/10/33/witchs-house-1635770_960_720.jpg",
+                },
+
+                new Article
+                {
+                    Title = "NaturalSpeech: End-to-end text to speech synthesis with human-level quality",
+                    Author = author6,
+                    Summary = "When a movie star from West Des Moines learns to sing, not everybody is supportive. However, her fortunes improve when her step-sister buys a deralict castle. Eventually, the movie star realises that she has always been a worthwhile person and does not need to change.",
+                    Url = "http://www.example.com/bear",
+                    PublicationDate = new DateTime(2022, 10, 28),
+                    ImageUrl = "https://cdn.pixabay.com/photo/2016/04/25/07/15/man-1351317__340.png",
+                },
+
+                new Article
+                {
+                    Title = "Husky, Datadog's Third-Generation Event Store",
+                    Author = author7,
+                    Summary = "A WW2 veteran Brisbane who recieves an invitation to a modern battle. It turns out the invitations is spam and is from a scammer who is famous for making up stories.",
+                    Url = "https://www.example.com/bells",
+                    PublicationDate = new DateTime(2022, 3, 4),
+                    ImageUrl = "https://cdn.pixabay.com/photo/2020/03/13/08/19/ornaments-4927258__340.jpg",
+                },
+
+                new Book
+                {
+                    Title = "Singers and Vampires",
+                    Author = new Author { Name = "Gargi Sudheer" },
+                    Summary = "In a world where vampires run large corporations, one singer has no choice but to protect mankind using a magic ring. It turns out the vampires are all sheep.",
+                    Url = "https://example.com/baseball/adjustment.aspx?airplane=border&advertisement=argument",
+                    PublicationDate = new DateTime(1972, 4, 24),
+                    EditionCount = 3,
+                    ImageUrl = "https://cdn.pixabay.com/photo/2016/08/07/18/22/back-to-school-1576791__340.jpg"
                 }
             };
 
-            // Link publications back to authors
             author1.Publications.Add(publications[0]);
             author2.Publications.Add(publications[1]);
             author3.Publications.Add(publications[2]);
             author4.Publications.Add(publications[3]);
+            author5.Publications.Add(publications[4]);
+            author6.Publications.Add(publications[5]);
+            author7.Publications.Add(publications[6]);
+            author8.Publications.Add(publications[7]);
 
             return publications;
         }
